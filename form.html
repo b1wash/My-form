@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 11</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+
+    <div id="main">
+    <form
+      id="contactform"
+      action="mailto:biwas96@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <h1>My Form</h1>
+      <p>Name: <input type="text" size="20" maxlength="30"/><label for=""></label></p>
+      <p>What kind of computer do you have?</p>
+      <input type="checkbox" /><label for="">Desktop</label><br />
+      <input type="checkbox" /><label for="">Laptop</label>
+      <p>Do you study at home? <select class="form-study"name="place"id="study"></p>
+        <option selected ="" value="alwaysdaily"name="alwaysdaily">Always, daily</option>
+        <option value="manytimes"name="manytimes">Many times</option>
+        <option value="somedays"name="somedays">Some days</option>
+        <option value="payme"name="payme">Not even if they pay me</option>
+      </select>
+        <p>Choose a new password: <input type="password" size="10" id="passwordField"/><label for="passwordField"></label></p>
+        <p>Add a photo: <input type="file" accept="image/*" size="100"></p>
+        <p>Do you want to receive publicity? <input name ="radio"type="radio" id = "no" value="no" checked><label for="no">No</label><input name ="radio" type="radio" id = "yes" value="yes"><label for=""yes>Yes</label></p>
+        <p>Add what you think is convenient:</p>
+        <textarea name="message" id="text" cols="20" rows="5"></textarea><br>
+        <button>Empty the form</button>
+        <input type="submit" value="SEND">
+        <p>(Don´t forget the <a href="#passwordField">password</a>)</p>
+    </form>
+  </div>
+  </body>
+</html>
